@@ -1,0 +1,158 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 50px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: black;
+    background-color: white;
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+
+.whiteHeader {
+    color: black;
+    background-color: white;
+}
+
+#desktop-nav {
+    display: none;
+}
+
+#menu-btn {
+    margin-right: 20px;
+}
+
+#header-name {
+    margin-left: 20px;
+}
+
+a:hover {
+    background-color: #32323210;
+}
+
+header > nav {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid hotpink;*/
+}
+
+header > nav > div {
+    display: flex;
+    align-items: center;
+}
+
+#project-details {
+    margin-top: 50px;
+}
+
+ol, ul {
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 10px 20px;
+
+    font-size: 14px;
+}
+
+ol li {
+    padding-bottom: 5px;
+}
+
+#menu-btn {
+    padding-right: 20px;
+}
+
+
+
+
+/* Areas of Interests */
+section {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 50px;
+
+    border-color: pink;
+    border-width: 2px;
+}
+
+section h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section p, section div {
+    padding-top: 10px;
+}
+
+section ul {
+    list-style: square;
+}
+
+section li {
+    padding-bottom: 2px;
+}
+
+section div h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #363636;
+    color: white;
+}
+
+footer > #stay-connected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+}
+
+footer #footer-icons {
+    width: 70vw;
+    height: 50px;
+
+    margin-top: 50px;
+
+    background-color: white;
+}
+
+footer #footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #232323;
+}
+
+
+footer nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #535353;
+}

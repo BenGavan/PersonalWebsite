@@ -1,0 +1,11 @@
+#menu-btn {
+    display: none;
+}
+
+#desktop-nav {
+    display: flex;
+}
+
+#desktop-nav a {
+    padding: 10px;
+}
