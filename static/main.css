@@ -39,6 +39,33 @@ header {
     padding-right: 20px;
 }
 
+#mobile-nav-container {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 2s;
+
+}
+
+#mobile-nav {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+}
+
+.display-none {
+    display: none;
+}
+
 a:hover {
     background-color: #32323210;
 }

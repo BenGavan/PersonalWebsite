@@ -16,15 +16,23 @@
 
     <nav id="desktop-nav">
         <div>
-            <a href="/software">Software</a>
+            <a href="https://github.com/BenGavan">Software</a>
             <a href="/physics">Physics</a>
         </div>
-        <a href=https://www.linkedin.com/in/ben-gavan>Contact</a>
+        <a href="https://www.linkedin.com/in/ben-gavan">Contact</a>
     </nav>
 
     <a id="menu-btn">
         Menu
     </a>
+
+    <div id="mobile-nav-container" class="display-none">
+        <nav id="mobile-nav">
+            <a href="/software">Software</a>
+            <a href="/physics">Physics</a>
+            <a href="https://www.linkedin.com/in/ben-gavan">Contact</a>
+        </nav>
+    </div>
 </header>
 
 <section id="atf">
@@ -33,7 +41,7 @@
         <h1>Ben Gavan</h1>
         <p>Interests in physics, maths, and computing.</p>
         <p>4th year MPhys Physics w/ Theoretical Physics at the University of Manchester</p>
-<!--        <p>Physics, Maths, and Software.</p>-->
+        <!--        <p>Physics, Maths, and Software.</p>-->
     </div>
     <a id="read-more">
         <div id="atf-more">
@@ -62,13 +70,14 @@
                 <li>Accelerator Physics</li>
                 <li>High-energy theory (& the intersection with experiment)</li>
                 <li>Fliud Mechanics</li>
-<!--                <li>4th year Physics w/ Theoretical Physics undergraduate at the University of Manchester</li>-->
+                <!--                <li>4th year Physics w/ Theoretical Physics undergraduate at the University of Manchester</li>-->
             </ol>
         </div>
 
         <div>
             <h3>Main interests in Software Development</h3>
             <ol>
+                <li>C++</li>
                 <li>Golang</li>
                 <li>Native iOS & Android development</li>
                 <li>Cloud computing, microservices, and distributed systems</li>
@@ -95,10 +104,13 @@
 
 <section id="physics" class="area_of_interest">
     <h2>Physics and Maths</h2>
-    <p>I am currently in my 4th year of (MPhys) Physics with Theoretical Physics during which I have and continue to study a wide variety of areas including:</p>
+    <p>I am currently in my 4th year of (MPhys) Physics with Theoretical Physics during which I have and continue to
+        study a wide variety of areas including:</p>
     <ul>
         <li>Classical Mechanics</li>
-        <li>Quantum Mechanic <li>including the Relativistic QM including the Dirac equation</li></li>
+        <li>Quantum Mechanic
+        <li>including the Relativistic QM including the Dirac equation</li>
+        </li>
         <li>Quantum Field Theory</li>
         <li>General Relativity</li>
         <li>Fluid Mechanics (includes viscous fluids)</li>
@@ -125,11 +137,15 @@
 
     <p>I have taught myself several areas of computing including:</p>
     <ul>
-        <li>Server side development with <a href="https://go.dev/">Go</a> using with microservice architecture with Docker and Kubenetes </li>
+        <li>Server side development with <a href="https://go.dev/">Go</a> using microservice architecture with
+            Docker and Kubenetes
+        </li>
         <li>iOS development using Swift (UIKit)</li>
         <li>Android development using Java</li>
         <li>Python for data analysis and numerical calculations</li>
-        <li>C++ to contribute to <a href="http://oomph-lib.maths.man.ac.uk/doc/html/index.html">oomph-lib: an object-oriented open-source multi-physics finite element library</a>.</li>
+        <li>C++ to contribute to <a href="http://oomph-lib.maths.man.ac.uk/doc/html/index.html">oomph-lib: an
+            object-oriented open-source multi-physics finite element library</a>.
+        </li>
         <li>Databases including Relational (SQL) and Graph (Neo4j) databases.</li>
     </ul>
 
@@ -138,10 +154,10 @@
 </section>
 
 <footer>
-<!--    <div id="stay-connected">-->
-<!--        <h3>STAY CONNECTED</h3>-->
-<!--        <div id="footer-icons"></div>-->
-<!--    </div>-->
+    <!--    <div id="stay-connected">-->
+    <!--        <h3>STAY CONNECTED</h3>-->
+    <!--        <div id="footer-icons"></div>-->
+    <!--    </div>-->
     <nav id="footer-nav">
         <a href="/">Home</a>
         <div>|</div>
@@ -156,5 +172,6 @@
 <script type="text/javascript"
         src="../static/js/main.js">
 </script>
+<script type="text/javascript" src="../static/js/header.js"></script>
 </body>
 </html>

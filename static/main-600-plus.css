@@ -10,3 +10,7 @@ header {
 #desktop-nav {
     display: flex;
 }
+
+#mobile-nav {
+    display: none;
+}

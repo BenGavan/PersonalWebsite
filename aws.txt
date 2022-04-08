@@ -1,0 +1,70 @@
+aws ecr create-repository --repository-name personal-website --region us-east-1
+-----
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:us-east-1:647380127051:repository/personal-website",
+        "registryId": "647380127051",
+        "repositoryName": "personal-website",
+        "repositoryUri": "647380127051.dkr.ecr.us-east-1.amazonaws.com/personal-website",
+        "createdAt": "2021-12-19T15:50:22+00:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+-----
+aws_account_id = 647380127051
+region = us-east-1
+hello-repository (AWS Docker repository) = personal-website
+hello-world (local docker image tag) = personal-website
+-----
+docker tag [hello-world] [aws_account_id].dkr.ecr.[region].amazonaws.com/[hello-repository]
+
+docker tag personal-website 647380127051.dkr.ecr.us-east-1.amazonaws.com/personal-website
+
+-----
+
+aws ecr get-login-password | docker login --username AWS --password-stdin [aws_account_id].dkr.ecr.[region].amazonaws.com
+
+aws ecr get-login-password | docker login --username AWS --password-stdin 647380127051.dkr.ecr.us-east-1.amazonaws.com
+
+-----
+
+docker push [aws_account_id].dkr.ecr.[region].amazonaws.com/[hello-repository]
+
+docker push 647380127051.dkr.ecr.us-east-1.amazonaws.com/personal-website
+
+-----
+
+aws ecr delete-repository --repository-name [hello-repository] --region [region] --force
+
+aws ecr delete-repository --repository-name personal-website --region us-east-1 --force
+
+-----
+-----
+Pull an image from Amazon ECR
+-----
+aws ecr get-login-password | docker login --username AWS --password-stdin [aws_account_id].dkr.ecr.[region].amazonaws.com
+
+aws ecr get-login-password | docker login --username AWS --password-stdin 647380127051.dkr.ecr.us-east-1.amazonaws.com
+
+-----
+
+docker pull [aws_account_id].dkr.ecr.[region].amazonaws.com/[hello]:latest
+
+docker pull 647380127051.dkr.ecr.us-east-1.amazonaws.com/personal-website:latest
+
+
+docker tag 647380127051.dkr.ecr.us-east-1.amazonaws.com/personal-website personal-website
+
+docker run -p 80:80 personal-website
+
+-----
+docker run -d -p 80:80 personal-website
+
+9ae31e0463f8a17aa8643f90353c4969b717f507eb891e0c4cf04e8f98b64f82
+-----
